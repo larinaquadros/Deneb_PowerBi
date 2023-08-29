@@ -1,0 +1,79 @@
+{
+  "data": {"name": "dataset"},
+  "mark": {
+    "type": "rect",
+    "width": 25,
+    "height": 25,
+    "tooltip": true
+  },
+  "encoding": {
+    "y": {
+      "field": "Field",
+      "title": null,
+      "type": "nominal",
+      "scale": {"padding": 10}
+    },
+    "x": {
+      "field": "Country",
+      "title": null,
+      "axis": {
+        "orient": "top",
+        "labelAngle": -30,
+        "labelAlign": "left"
+      },
+      "type": "nominal"
+    },
+    "color": {
+      "field": "Value",
+      "type": "quantitative",
+      "aggregate": "sum",
+      "scale": {
+        "range": [
+          "#053061",
+          "#2166ac",
+          "#4393c3",
+          "#92c5de",
+          "#d1e5f0",
+          "#f7f7f7",
+          "#fddbc7",
+          "#f4a582",
+          "#d6604d",
+          "#b2182b",
+          "#67001f"
+        ]
+      },
+      "legend": {
+        "orient": "none",
+        "direction": "horizontal",
+        "title": null,
+        "legendX": 300,
+        "legendY": -95
+      }
+    },
+    "tooltip": [
+      {
+        "field": "Country",
+        "type": "nominal"
+      },
+      {
+        "field": "Field",
+        "type": "nominal",
+        "title": "Chosen Field"
+      },
+      {
+        "aggregate": "sum",
+        "field": "Value",
+        "type": "quantitative",
+        "title": "Total Students"
+      }
+    ]
+  },
+  "title": {
+    "text": "International Student Dreams: Is Business in Australia and Engineering, Math, and Computer Science in the US the Ultimate Path?",
+    "subtitle": "Fields chosen by international students",
+    "align": "left",
+    "font": "Calibri",
+    "anchor": "start",
+    "fontSize": 15
+  }
+}

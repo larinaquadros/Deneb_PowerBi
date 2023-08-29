@@ -1,0 +1,70 @@
+{
+  "data": {"name": "dataset"},
+  "layer": [
+    {
+      "mark": {
+        "type": "bar",
+        "width": {"band": 0.7}
+      },
+      "encoding": {
+        "x": {
+          "field": "Year",
+          "type": "ordinal",
+          "title": null,
+          "axis": {
+            "labelAngle": 360,
+            "labelAlign": "center"
+          }
+        },
+        "y": {
+          "aggregate": "sum",
+          "field": "Value",
+          "type": "quantitative",
+          "title": null,
+          "axis": {"format": "s"}
+        },
+        "color": {
+          "field": "Country",
+          "type": "nominal",
+          "title": null,
+          "scale": {
+            "range": [
+              "#67001f",
+              "#b2182b",
+              "#d6604d",
+              "#f4a582",
+              "#fddbc7",
+              "#f7f7f7",
+              "#d1e5f0",
+              "#92c5de",
+              "#4393c3",
+              "#2166ac",
+              "#053061",
+              "black"
+            ]
+          }
+        },
+        "tooltip": [
+          {
+            "field": "Country",
+            "type": "nominal"
+          },
+          {
+            "aggregate": "sum",
+            "field": "Value",
+            "type": "quantitative",
+            "title": "Total Students"
+          }
+        ]
+      },
+      "title": {
+        "text": "The United States and the United Kingdom have consistently attracted the largest numbers of international students.",
+        "subtitle": "Number of Inbound International students, by Country",
+        "align": "left",
+        "font": "Calibri",
+        "anchor": "start",
+        "fontSize": 15
+      }
+    }
+  ]
+}
